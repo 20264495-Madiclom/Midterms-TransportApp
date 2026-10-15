@@ -1,333 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madiclom - Gainz and Grains</title>
-  </head>
-  <body>
-  <font face="Arial">
+    <title>Wander.co - Transportation App</title>
+</head>
+<body id="top">
 
-    <header id="top">
-      <h1><img src="Sources/Activity_7_Logo.png" alt="Gainz and Grains logo" width="80" height="80"> Gainz and Grains</h1>
 
-      <form action="#" method="get">
-        <input type="search" name="q" placeholder="Search oats, pudding, bars">
-        <button type="submit"><font face="Arial">Search</font></button>
-      </form>
-
-      <nav>
-        <a href="#home">Home</a> |
-        <a href="#oats">Oats</a> |
-        <a href="#pudding">Pudding</a> |
-        <a href="#bars">Bars</a> |
-        <a href="#cart">Cart</a> |
-        <a href="#checkout">Checkout</a> |
-        <a href="#contact">Contact</a>
-      </nav>
-      <hr>
+    <header>
+        <h1>
+            <img src = "Sources/Activity_6_Car.png" style="width: 12px; height:18px">
+            Wander.co</h1>
+        <p><em>Your partner in every biyahe!</em></p>
+        <nav>
+            <a href="#book">Book a Ride</a> | 
+            <a href="#vehicle">Our Vehicles</a> | 
+            <a href="#map">Map</a> | 
+            <a href="#media">Media</a> | 
+            <a href="#schedule">Schedule</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr>
     </header>
 
     <main>
+        <section id="book">
+            <h2>Book a Ride</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>User's Info</legend>
+                    
+                    <p>
+                        <label for="fullname">Full name:</label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Juan Dela Cruz" required>
+                    </p>
 
-      <section id="home">
-        <h2>From the first bite to your last set.</h2>
-        <p>Gainz and Grains offers protein-packed oats, puddings, and bars made to fuel your day and your workouts.</p>
-        <form action="#oats">
-          <button type="submit"><font face="Arial">Shop Now</font></button>
-        </form>
-        <hr>
-      </section>
+                    <p>
+                        <label for="phone">Phone number:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="09XX XXX XXXX" required>
+                    </p>
 
-      <h2>Featured Photos</h2>
-      <table border="1" cellpadding="10" cellspacing="0" width="900" align="center">
-        <tr>
-          <td><figure><img src="Sources/Activity_7_Pub1.jpg" alt="Gainz and Grains featured product 1" width="300" height="200"></figure></td>
-          <td><figure><img src="Sources/Activity_7_Pub2.jpg" alt="Gainz and Grains featured product 2" width="300" height="200"></figure></td>
-          <td><figure><img src="Sources/Activity_7_Pub3.jpg" alt="Gainz and Grains featured product 3" width="300" height="200"></figure></td>
-        </tr>
-      </table>
-      <hr>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="email@gmail.com">
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset> 
+                    <legend>Trip Details</legend>
+                    <p>
+                        <label for="pickup">Pick-up location:</label><br>
+                        <input type="text" id="pickup" name="pickup" list="places" placeholder="Select or type location">
+                    </p>
 
-      <section id="oats">
-        <h2 align="center">Oats</h2>
-        <table border="1" cellpadding="10" cellspacing="0" width="900" align="center">
-          <tr>
-            <td>
-              <h3>Triple Chocolate Overnight Oats</h3>
-              <p align="center"><img src="Sources/Activity_7_Oats1.png" alt="Jar of Triple Chocolate Overnight Oats" width="200" height="200"></p>
-              <p>Rich cocoa, dark chocolate notes, and hearty oats combine for a creamy, dessert-like breakfast packed with long-lasting energy to power through your morning.</p>
-              <p><strong>₱85.00</strong></p>
-              <button type="button"><font face="Arial">Add to Cart</font></button>
-            </td>
-            <td>
-              <h3>Chocolate Peanut Butter</h3>
-              <p align="center"><img src="Sources/Activity_7_Oats2.png" alt="Jar of Chocolate Peanut Butter Overnight Oats" width="200" height="200"></p>
-              <p>Creamy peanut butter meets rich chocolate blended into wholesome oats for a perfectly balanced, protein-packed fuel to keep you satisfied and energized.</p>
-              <p><strong>₱95.00</strong></p>
-              <button type="button"><font face="Arial">Add to Cart</font></button>
-            </td>
-            <td>
-              <h3>Strawberry Yogurt</h3>
-              <p align="center"><img src="Sources/Activity_7_Oats3.png" alt="Jar of Strawberry Yogurt Overnight Oats" width="200" height="200"></p>
-              <p>Creamy yogurt mixed with real strawberry flavor and hearty oats creates a gut-friendly, fruit-infused jar of breakfast goodness.</p>
-              <p><strong>₱115.00</strong></p>
-              <button type="button"><font face="Arial">Add to Cart</font></button>
-            </td>
-          </tr>
-        </table>
-      </section>
+                    <p>
+                        <label for="dropoff">Drop-off location:</label><br>
+                        <input type="text" id="dropoff" name="dropoff" list="places" placeholder="Select or type location">
+                    </p>
 
-      <section id="pudding">
-        <h2 align="center">Puddings</h2>
-        <table border="1" cellpadding="10" cellspacing="0" width="900" align="center">
-          <tr>
-            <td>
-              <h3>High Protein Banana Pudding</h3>
-              <p align="center"><img src="Sources/Activity_7_Pud1.png" alt="Cup of High Protein Banana Pudding" width="200" height="200"></p>
-              <p>Packed with high-quality protein and comforting banana flavor, this pudding serves up a delicious post-workout treat or healthy snack without compromising on taste.</p>
-              <p><strong>₱85.00</strong></p>
-              <button type="button"><font face="Arial">Add to Cart</font></button>
-            </td>
-            <td>
-              <h3>High Protein Biscoff Pudding</h3>
-              <p align="center"><img src="Sources/Activity_7_Pud2.png" alt="Cup of High Protein Biscoff Pudding" width="200" height="200"></p>
-              <p>Enjoy the iconic spiced caramel cookie butter flavor in a silky, high-protein pudding base tailored for fitness enthusiasts.</p>
-              <p><strong>₱85.00</strong></p>
-              <button type="button"><font face="Arial">Add to Cart</font></button>
-            </td>
-            <td>
-              <h3>High Protein Strawberry Pudding</h3>
-              <p align="center"><img src="Sources/Activity_7_Pud3.png" alt="Cup of High Protein Strawberry Pudding" width="200" height="200"></p>
-              <p>A guilt-free dessert alternative loaded with protein to help hit your macro goals while satisfying your sweet tooth.</p>
-              <p><strong>₱105.00</strong></p>
-              <button type="button"><font face="Arial">Add to Cart</font></button>
-            </td>
-          </tr>
-        </table>
-        <hr>
-      </section>
+                    <datalist id="places">
+                        <option value="Central Terminal"></option>
+                        <option value="City Hall"></option>
+                        <option value="Airport"></option>
+                        <option value="University Campus"></option>
+                        <option value="Public Market"></option>
+                    </datalist>
+                    
+                    <p>
+                        <label for="trip-date">Date:</label>
+                        <input type="date" id="trip-date" name="trip-date" required>
+                        <label for="trip-time">Time:</label>
+                        <input type="time" id="trip-time" name="trip-time" required>
+                    </p>
+                    
+                    <p>
+                        <label for="passengers">Passengers (1-10):</label>
+                        <input type="number" id="passengers" name="passengers" min="1" max="10" value="1">
+                    </p>
+                    
+                    <p>
+                        <label for="vehicle">Vehicle type:</label>
+                        <select id="vehicle" name="vehicle">
+                            <option value="Taxi">Taxi</option>
+                            <option value="Van">Van</option>
+                            <option value="Shuttle Bus">Shuttle Bus</option>
+                            <option value="Motorcycle Taxi">Motorcycle Taxi</option>
+                            <option value="Tricycle">Tricycle</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <strong>Payment method:</strong><br>
+                        <input type="radio" id="cash" name="payment" value="Cash" checked>
+                        <label for="cash">Cash</label>
+                        <input type="radio" id="card" name="payment" value="Card">
+                        <label for="card">Card</label>
+                        <input type="radio" id="ewallet" name="payment" value="E-Wallet">
+                        <label for="ewallet">E-Wallet</label>
+                    </p>
+                    
+                    <p>
+                        <strong>Extras:</strong><br>
+                        <input type="checkbox" id="luggage" name="extras" value="Extra luggage">
+                        <label for="luggage">Extra luggage</label><br>
+                        <input type="checkbox" id="childseat" name="extras" value="Child seat">
+                        <label for="childseat">Child seat</label><br>
+                        <input type="checkbox" id="wheelchair" name="extras" value="Wheelchair accessible">
+                        <label for="wheelchair">Wheelchair accessible</label>
+                    </p>
+                    
+                    <p>
+                        <label for="notes">Notes for the driver:</label><br>
+                        <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Landmarks, special instructions..."></textarea>
+                    </p>
+                </fieldset>
+                    
+                    <p>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#terms-info">Terms & Conditions</a></label>
+                    </p>
+                    
+                    <p>
+                        <button type="submit">Book Now</button>
+                        <button type="reset">Clear</button>
+                    </p>
+            </form>
+            <hr>
+        </section>
 
-      <section id="bars">
-        <h2 align="center">Bars</h2>
-        <table border="1" cellpadding="10" cellspacing="0" width="900" align="center">
-          <tr>
-            <td>
-              <h3>Chocolate Peanut Butter Pie</h3>
-              <p align="center"><img src="Sources/Activity_7_Bar1.png" alt="Chocolate Peanut Butter Pie protein bar" width="200" height="200"></p>
-              <p>All the irresistible flavor of a bakery-fresh peanut butter pie, packed into a convenient protein bar.</p>
-              <p><strong>₱75.00</strong></p>
-              <button type="button"><font face="Arial">Add to Cart</font></button>
-            </td>
-            <td>
-              <h3>Coconut Chocolate Almond</h3>
-              <p align="center"><img src="Sources/Activity_7_Bar2.png" alt="Coconut Chocolate Almond protein bar" width="200" height="200"></p>
-              <p>A tropical escape in every bite! Toasted coconut, crunchy almonds, and smooth chocolate layered into a power-packed bar for clean, sustained energy.</p>
-              <p><strong>₱89.00</strong></p>
-              <button type="button"><font face="Arial">Add to Cart</font></button>
-            </td>
-            <td>
-              <h3>Cranberry Almond</h3>
-              <p align="center"><img src="Sources/Activity_7_Bar3.png" alt="Cranberry Almond protein bar" width="200" height="200"></p>
-              <p>Tart, chewy dried cranberries paired with crunchy sliced almonds for a wholesome snack that hits the ideal balance of sweet, nutty, and nutritious.</p>
-              <p><strong>₱99.00</strong></p>
-              <button type="button"><font face="Arial">Add to Cart</font></button>
-            </td>
-          </tr>
-        </table>
-        <hr>
-      </section>
+        <section id="Vehicle">
+            <h2>Our Vehicles</h2>
+            
+            <figure>
+                <img src="Sources/Activity_6_Vios.jpg" alt="Taxi" width="400" height="250">
+                <figcaption><strong>Taxi</strong> – Perfect for 4 passengers</figcaption>
+            </figure>
 
-      <section id="cart">
-        <h2>Your Cart</h2>
-        <table border="1" cellpadding="8" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Product</th>
-              <th>Price</th>
-              <th>Qty</th>
-              <th>Subtotal</th>
-              <th>Remove</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>High Protein Banana Pudding</td>
-              <td>₱85.00</td>
-              <td><input type="number" name="qty-banana-pudding" aria-label="Quantity of High Protein Banana Pudding" min="1" max="20" value="2"></td>
-              <td>₱170.00</td>
-              <td><button type="button"><font face="Arial">Remove</font></button></td>
-            </tr>
-            <tr>
-              <td>Triple Chocolate Overnight Oats</td>
-              <td>₱85.00</td>
-              <td><input type="number" name="qty-overnight-oats" aria-label="Quantity of Triple Chocolate Overnight Oats" min="1" max="20" value="1"></td>
-              <td>₱85.00</td>
-              <td><button type="button"><font face="Arial">Remove</font></button></td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th colspan="3">Total</th>
-              <td colspan="2"><strong>₱255.00</strong></td>
-            </tr>
-          </tfoot>
-        </table>
-        <form action="#checkout">
-          <p><button type="submit"><font face="Arial">Proceed to Checkout</font></button></p>
-        </form>
-        <hr>
-      </section>
+            <figure>
+                <img src="Sources/Activity_6_Hiace.jpg" alt="Van" width="400" height="250">
+                <figcaption><strong>Van</strong> – Perfect for groups up to 12 passengers</figcaption>
+            </figure>
 
-      <section id="checkout">
-        <h2>Checkout</h2>
-        <form action="#" method="post">
+            <figure>
+                <img src="Sources/Activity_6_Bus.jpg" alt="Shuttle Bus" width="400" height="250">
+                <figcaption><strong>Shuttle Bus</strong> – Affordable fixed-route transport.</figcaption>
+            </figure>
 
-          <fieldset>
-            <legend>Shipping Details</legend>
-            <p>
-              <label for="fullname">Full name:</label>
-              <input type="text" id="fullname" name="fullname" placeholder="Carmela Madiclom" required>
-            </p>
-            <p>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="gains@gmail.com" required>
-            </p>
-            <p>
-              <label for="phone">Phone number:</label>
-              <input type="tel" id="phone" name="phone" placeholder="0912 345 6789">
-            </p>
-            <p>
-              <label for="address">Address:</label><br>
-              <textarea id="address" name="address" rows="3" cols="40" required></textarea>
-            </p>
-            <p>
-              <label for="city">City:</label>
-              <input type="text" id="city" name="city" list="cities" placeholder="Choose or type a city">
-              <datalist id="cities">
-                <option value="Baguio">
-                <option value="Pangasinan">
-                <option value="Clark">
-                <option value="Tarlac">
-              </datalist>
-            </p>
-            <p>
-              <label for="delivery-date">Delivery date:</label>
-              <input type="date" id="delivery-date" name="delivery-date">
-            </p>
-            <p>
-              <label for="delivery-option">Delivery option:</label>
-              <select id="delivery-option" name="delivery-option">
-                <option value="standard">Standard</option>
-                <option value="express">Express</option>
-                <option value="pickup">Store Pick-up</option>
-              </select>
-            </p>
-          </fieldset>
+          
+            <hr>
+        </section>
 
-          <br>
+    
+        <section id="media">
+            <h2>Media</h2>
 
-          <fieldset>
-            <legend>Payment Method</legend>
-            <p>
-              <input type="radio" id="pay-card" name="payment" value="card">
-              <label for="pay-card">Credit / Debit Card</label><br>
-              <input type="radio" id="pay-cod" name="payment" value="cod" checked>
-              <label for="pay-cod">Cash on Delivery</label><br>
-              <input type="radio" id="pay-ewallet" name="payment" value="ewallet">
-              <label for="pay-ewallet">E-Wallet</label>
-            </p>
-            <p>
-              <input type="checkbox" id="gift" name="extras" value="gift-wrap">
-              <label for="gift">Gift wrap</label><br>
-              <input type="checkbox" id="receipt" name="extras" value="receipt">
-              <label for="receipt">Include receipt</label>
-            </p>
-          </fieldset>
+            <h3>How WanderCo Works</h3>
+            <video style = "width:500px; height:300px;" controls>
+                <source src="Sources/Sample_vid.mp4" type="video/mp4">
+                <source src="Sources/Sample_vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-          <p>
-            <input type="checkbox" id="terms" name="terms" value="agreed" required>
-            <label for="terms">I agree to the <a href="#terms-info">Terms &amp; Conditions</a></label>
-          </p>
+            <h3>Driver Announcement</h3>
+            <audio controls>
+                <source src="Sources/Sample_Audio.mp3">
+                <source src="Sources/Sample_Audio.mp3>
+                Your browser does not support the audio element.
+            </audio>
 
-          <p>
-            <button type="submit"><font face="Arial">Place Order</font></button>
-            <button type="reset"><font face="Arial">Clear</font></button>
-          </p>
-        </form>
-        <hr>
-      </section>
+            <h3>Watch on YouTube</h3>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/watch?v=D5r2Pfr7ybQ" 
+                title="Wander.co Introductory Video" 
+                allowfullscreen>
+            </iframe>
+            <hr>
+        </section>
 
-      <section id="contact">
-        <h3>Reach Us</h3>
-        <address>
-          <strong>Gainz and Grains</strong><br>
-          Tarlac City<br>
-          Phone: <a href="tel:+639123456789">+63 912 345 6789</a><br>
-          Email: <a href="mailto:gainz@gmail.com">gainz@gmail.com</a>
-        </address>
+        <!-- Step 6: Schedule Table and Route Form -->
+        <section id="schedule">
+            <h2>Shuttle Schedule</h2>
+            
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption>Daily departures from Central Terminal</caption>
+                <thead>
+                    <tr>
+                        <th>Route</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                        <th>Fare</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Terminal — City Hall</td>
+                        <td>7:00 AM</td>
+                        <td>7:30 AM</td>
+                        <td>₱50</td>
+                    </tr>
+                    <tr>
+                        <td>Terminal — University</td>
+                        <td>6:00 AM</td>
+                        <td>6:40 AM</td>
+                        <td>₱35</td>
+                    </tr>
+                    <tr>
+                        <td>Terminal — Airport</td>
+                        <td>9:00 AM</td>
+                        <td>10:00 AM</td>
+                        <td>₱220</td>
+                    </tr>
+                    <tr>
+                        <td>Terminal — Public Market</td>
+                        <td>1:00 PM</td>
+                        <td>1:25 PM</td>
+                        <td>₱65</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <h3>Leave a Review</h3>
-        <form action="#" method="post" enctype="multipart/form-data">
-          <p>
-            <label for="reviewer">Your name:</label>
-            <input type="text" id="reviewer" name="reviewer" required>
-          </p>
-          <p>
-            <label for="rating">Rating (1 to 5):</label>
-            <input type="range" id="rating" name="rating" min="1" max="5" value="5">
-          </p>
-          <p>
-            <label for="review-text">Your review:</label><br>
-            <textarea id="review-text" name="review-text" rows="4" cols="40" required></textarea>
-          </p>
-          <p>
-            <label for="review-photo">Add a photo (optional):</label>
-            <input type="file" id="review-photo" name="review-photo" accept="image/*">
-          </p>
-          <button type="submit"><font face="Arial">Submit Review</font></button>
-        </form>
-        <hr>
-      </section>
+            <h3>Check Your Route</h3>
+            <form action="#" method="get">
+                <p>
+                    <label for="select-route">Choose a route:</label>
+                    <select id="select-route" name="route">
+                        <option value="City Hall">Terminal — City Hall</option>
+                        <option value="University">Terminal — University</option>
+                        <option value="Airport">Terminal — Airport</option>
+                        <option value="Public Market">Terminal — Public Market</option>
+                    </select>
+                    <button type="submit">Search</button>
+                </p>
+            </form>
+            <hr>
+        </section>
 
-      <section id="links">
-        <h2>Visit us on</h2>
-        <a href="https://www.facebook.com">
-          <img src="Sources/facebook.png" width="12" height="12" alt="Facebook logo"> Facebook
-        </a>
-        <a href="https://www.instagram.com">
-          <img src="Sources/instagram.png" width="12" height="12" alt="Instagram logo"> Instagram
-        </a>
-        <a href="https://www.tiktok.com">
-          <img src="Sources/tik-tok.png" width="12" height="12" alt="TikTok logo"> TikTok
-        </a>
-      </section>
+        <section id="contact">
+            <h2>Contact & Feedback</h2>
 
-      <section id="terms-info">
-        <h2>Terms &amp; Conditions</h2>
-        <details>
-          <summary>Read the terms</summary>
-          <ol>
-            <li>Returns: unused items may be returned within 7 days with the receipt. Food items can only be returned if damaged or spoiled on arrival.</li>
-            <li>Delivery: standard delivery takes 2 to 3 days within Tarlac and nearby areas. Express delivery arrives the next day for an extra fee.</li>
-            <li>Payment: all prices are in Philippine pesos (₱). Orders are confirmed once payment is received or Cash on Delivery is accepted.</li>
-          </ol>
-        </details>
-      </section>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Send Feedback</legend>
 
+                    <p>
+                        <label for="fb-name">Your name:</label><br>
+                        <input type="text" id="fb-name" name="fb-name" required>
+                    </p>
+
+                    <p>
+                        <label for="rating">Rate your ride (1-5):</label><br>
+                        <input type="range" id="rating" name="rating" min="1" max="5" value="5">
+                    </p>
+
+                    <p>
+                        <label for="topic">Topic:</label><br>
+                        <select id="topic" name="topic">
+                            <option value="Compliment">Compliment</option>
+                            <option value="Complaint">Complaint</option>
+                            <option value="Lost item">Lost item</option>
+                            <option value="Suggestion">Suggestion</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="fb-message">Message:</label><br>
+                        <textarea id="fb-message" name="fb-message" rows="5" cols="40" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="photo">Attach a photo (optional):</label><br>
+                        <input type="file" id="photo" name="photo" accept="image/*">
+                    </p>
+
+                    <p>
+                        <button type="submit">Send Feedback</button>
+                    </p>
+                </fieldset>
+            </form>
+
+            <h3>Reach Us</h3>
+            <address>
+                Wander.co.<br>
+                Tarlac, Philippines<br>
+                Phone: <a href="tel:+639474226197">+63 947 422 6197</a><br>
+                Email: <a href="mailto:support@wander.com">support@wander.com</a>
+            </address>
+            <hr>
+        </section>
+
+        <section id="links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://maps.google.com" target="_blank" rel="noopener">Google Maps</a></li>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener">Our Facebook Page</a></li>
+                <li><a href="https://youtube.com" target="_blank" rel="noopener">Our Youtube Page</a></li> 
+                <li><a href="#top">Back to top ↑</a></li>
+            </ul>
+        </section>
+
+        <section id="terms-info">
+            <h2>Terms & Conditions</h2>
+            <details>
+                <summary>Read the terms</summary>
+                <ol>
+                    <li>Passengers must arrive 5 minutes before scheduled departure time.</li>
+                    <li>No smoking or eating inside the vehicles.</li>
+                    <li>Fares are subject to regulatory updates without prior notice.</li>
+                </ol>
+            </details>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <hr>
-      <p>
-        <a href="#top">About Us</a> |
-        <a href="#contact">Contact</a> |
-        <a href="#terms-info">Shipping Policy</a> |
-        <a href="#terms-info">Returns</a>
-      </p>
-      <p>&copy; 2026 Gainz and Grains | Madiclom, Carmela F. IAA1 All rights reserved.</p>
+        <hr>
+        <p>&copy; 2026 WanderTransport Co. Madiclom, Carmela F.  All rights reserved.</p>
     </footer>
 
-  </font>
-  </body>
+</body>
 </html>
